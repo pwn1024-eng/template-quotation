@@ -56,7 +56,15 @@ pipeline {
     }
     failure {
       script {
-        def author = sh(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+        def author = ''
+        try {
+          author = sh(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+        } catch (Exception e) {
+          echo "Warning: Could not retrieve author email from git log: ${e.message}"
+        }
+        if (!author) {
+          author = env.CHANGE_AUTHOR_EMAIL?.trim() ?: 'pwn024@gmail.com'
+        }
         def developerEmails = env.SECURITY_DEVELOPER_EMAILS?.trim()
         def infraEmails = env.SECURITY_INFRA_EMAILS?.trim()
         def missingRecipients = []
