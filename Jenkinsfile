@@ -11,29 +11,28 @@ pipeline {
     }
 
     stage('Secrets Scan') {
-      steps {
-        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-          sh '''
-            docker run --rm --user $(id -u):$(id -g) -v "$PWD":/repo zricethezav/gitleaks:latest \
-              detect --source /repo --redact --exit-code 1 \
-              --report-format json --report-path /repo/reports/gitleaks.json
-          '''
-        }
-      }
+  steps {
+    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+      sh 'gitleaks detect --source . --redact --exit-code 1 --report-format json --report-path reports/gitleaks.json'
     }
+  }
+}
 
-    stage('Code Scan (SAST)') {
-      steps {
-        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-          sh '''
-            docker run --rm --user $(id -u):$(id -g) -v "$PWD":/src semgrep/semgrep \
-              semgrep scan --config auto --severity ERROR --error \
-              --exclude node_modules --exclude .next \
-              --json -o /src/reports/semgrep.json /src
-          '''
-        }
-      }
+stage('Code Scan (SAST)') {
+  steps {
+    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+      sh 'semgrep scan --config auto --severity ERROR --error --exclude node_modules --exclude .next --json -o reports/semgrep.json .'
     }
+  }
+}
+
+stage('Filesystem / Config Scan') {
+  steps {
+    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+      sh 'trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --skip-dirs node_modules --skip-dirs .next --exit-code 1 --format json -o reports/trivy.json .'
+    }
+  }
+}
 
     stage('Dependency Scan') {
       steps {
