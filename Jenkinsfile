@@ -1,7 +1,7 @@
 pipeline {
   agent any
 
-  triggers { pollSCM('H/2 * * * *') }   // check GitHub every ~2 min
+  triggers { pollSCM('H/2 * * * *') }   // check GitHub every ~2 minutes
   options  { timestamps() }
 
   stages {
@@ -11,28 +11,20 @@ pipeline {
     }
 
     stage('Secrets Scan') {
-  steps {
-    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-      sh 'gitleaks detect --source . --redact --exit-code 1 --report-format json --report-path reports/gitleaks.json'
+      steps {
+        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+          sh 'gitleaks detect --source . --redact --exit-code 1 --report-format json --report-path reports/gitleaks.json'
+        }
+      }
     }
-  }
-}
 
-stage('Code Scan (SAST)') {
-  steps {
-    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-      sh 'semgrep scan --config auto --severity ERROR --error --exclude node_modules --exclude .next --json -o reports/semgrep.json .'
+    stage('Code Scan (SAST)') {
+      steps {
+        catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+          sh 'semgrep scan --config auto --severity ERROR --error --exclude node_modules --exclude .next --json -o reports/semgrep.json .'
+        }
+      }
     }
-  }
-}
-
-stage('Filesystem / Config Scan') {
-  steps {
-    catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-      sh 'trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --skip-dirs node_modules --skip-dirs .next --exit-code 1 --format json -o reports/trivy.json .'
-    }
-  }
-}
 
     stage('Dependency Scan') {
       steps {
@@ -46,17 +38,12 @@ stage('Filesystem / Config Scan') {
     stage('Filesystem / Config Scan') {
       steps {
         catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
-          sh '''
-            docker run --rm --user $(id -u):$(id -g) -v "$PWD":/src aquasec/trivy \
-              fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL \
-              --skip-dirs node_modules --skip-dirs .next \
-              --exit-code 1 --format json -o /src/reports/trivy.json /src
-          '''
+          sh 'trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --skip-dirs node_modules --skip-dirs .next --exit-code 1 --format json -o reports/trivy.json .'
         }
       }
     }
 
-    // Deploy only runs if everything above passed
+    // Runs only if every scan above passed
     stage('Deploy to UAT') {
       when { expression { currentBuild.currentResult == 'SUCCESS' } }
       steps { echo 'Add your UAT deploy here' }
@@ -64,7 +51,9 @@ stage('Filesystem / Config Scan') {
   }
 
   post {
-    always { archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true }
+    always {
+      archiveArtifacts artifacts: 'reports/**', allowEmptyArchive: true
+    }
     failure {
       script {
         def author = sh(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
