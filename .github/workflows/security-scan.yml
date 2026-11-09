@@ -37,7 +37,9 @@ jobs:
         continue-on-error: true
         run: |
           echo "Installing Gitleaks..."
-          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz | tar -xz -C /usr/local/bin gitleaks
+          curl -sSL -o /tmp/gitleaks.tar.gz https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz
+          tar -xzf /tmp/gitleaks.tar.gz -C /usr/local/bin gitleaks
+          rm -f /tmp/gitleaks.tar.gz
           gitleaks detect --source . --redact --report-format json --report-path reports/gitleaks.json --exit-code 1 || echo "GITLEAKS_FAILED=true" >> $GITHUB_ENV
 
       # 2. SAST Scan with Semgrep
@@ -62,7 +64,9 @@ jobs:
         continue-on-error: true
         run: |
           echo "Installing Trivy..."
-          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+          curl -sSL -o /tmp/trivy.tar.gz https://github.com/aquasecurity/trivy/releases/download/v0.58.0/trivy_0.58.0_Linux-64bit.tar.gz
+          tar -xzf /tmp/trivy.tar.gz -C /usr/local/bin trivy
+          rm -f /tmp/trivy.tar.gz
           trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --skip-dirs node_modules --skip-dirs .next --format json -o reports/trivy.json --exit-code 1 . || echo "TRIVY_FAILED=true" >> $GITHUB_ENV
 
       # 5. Summarize Scan Results
