@@ -21,3 +21,4 @@ RUN python3 -m venv /opt/semgrep \
  && ln -sf /opt/semgrep/bin/semgrep /usr/local/bin/semgrep
 
 USER jenkins
+
