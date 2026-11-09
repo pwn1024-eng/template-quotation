@@ -1,23 +1,15 @@
-FROM jenkins/jenkins:lts-jdk17
-USER root
+services:
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    container_name: jenkins-server
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_data:/var/jenkins_home
+    restart: unless-stopped
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-      curl ca-certificates git python3 python3-venv \
- && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
- && apt-get install -y nodejs \
- && rm -rf /var/lib/apt/lists/*
-
-# Gitleaks (secrets)
-RUN curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz \
-    | tar -xz -C /usr/local/bin gitleaks
-
-# Trivy (dependencies, config, secrets)
-RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh \
-    | sh -s -- -b /usr/local/bin v0.58.0
-
-# Semgrep (SAST), in its own virtualenv
-RUN python3 -m venv /opt/semgrep \
- && /opt/semgrep/bin/pip install --no-cache-dir semgrep \
- && ln -s /opt/semgrep/bin/semgrep /usr/local/bin/semgrep
-
-USER jenkins
+volumes:
+  jenkins_data:
