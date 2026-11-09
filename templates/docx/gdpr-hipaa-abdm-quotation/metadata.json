@@ -1,0 +1,404 @@
+{
+  "id": "gdpr-hipaa-abdm-quotation",
+  "name": "GDPR / HIPAA / ABDM Quotation",
+  "slug": "gdpr-hipaa-abdm-quotation",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 20,
+  "sectionsDetected": 3,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 4
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 3
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 3,
+      "fieldCount": 13
+    }
+  ],
+  "fields": [
+    {
+      "id": "quotation-number",
+      "label": "Quotation Number",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation Number]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation Number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "customer-details",
+      "label": "Customer Details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Details]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 6
+        }
+      ]
+    },
+    {
+      "id": "red-sno",
+      "label": "S.No",
+      "source": "RED_TEXT",
+      "originalValue": "S.No",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "S.No",
+      "placeholder": "S.No",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 365,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-particulars",
+      "label": "Particulars",
+      "source": "RED_TEXT",
+      "originalValue": "Particulars",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Particulars",
+      "placeholder": "Particulars",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 366,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-amount-inr",
+      "label": "Amount INR",
+      "source": "RED_TEXT",
+      "originalValue": "Amount INR",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "Amount INR",
+      "placeholder": "Amount INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 367,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-payment-terms",
+      "label": "Payment Terms",
+      "source": "RED_TEXT",
+      "originalValue": "Payment Terms",
+      "required": false,
+      "type": "textarea",
+      "section": "Commercials",
+      "defaultValue": "Payment Terms",
+      "placeholder": "Payment Terms",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 368,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-1",
+      "label": "1.",
+      "source": "RED_TEXT",
+      "originalValue": "1.",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "1.",
+      "placeholder": "1.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 369,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-gdpr-hipaa-abdm-compliance-consulting",
+      "label": "GDPR, HIPAA & ABDM Compliance ...",
+      "source": "RED_TEXT",
+      "originalValue": "GDPR, HIPAA & ABDM Compliance Consulting",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "GDPR, HIPAA & ABDM Compliance Consulting",
+      "placeholder": "GDPR, HIPAA & ABDM Compliance Consulting",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 370,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-45",
+      "label": "45",
+      "source": "RED_TEXT",
+      "originalValue": "45",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "45",
+      "placeholder": "45",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 371,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-00-inr-one-time",
+      "label": "00 INR / One time",
+      "source": "RED_TEXT",
+      "originalValue": "00 INR / One time",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "00 INR / One time",
+      "placeholder": "00 INR / One time",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 371,
+          "runIndex": 5
+        }
+      ]
+    },
+    {
+      "id": "red-10",
+      "label": "10",
+      "source": "RED_TEXT",
+      "originalValue": "10",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "10",
+      "placeholder": "10",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 372,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-0-advance",
+      "label": "0% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "0% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "0% - Advance",
+      "placeholder": "0% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 372,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-3",
+      "label": "3.",
+      "source": "RED_TEXT",
+      "originalValue": "3.",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "3.",
+      "placeholder": "3.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 373,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-compliance-testing-validation",
+      "label": "Compliance Testing & Validatio...",
+      "source": "RED_TEXT",
+      "originalValue": "Compliance Testing & Validation",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Compliance Testing & Validation",
+      "placeholder": "Compliance Testing & Validation",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 374,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-72800",
+      "label": "72,800",
+      "source": "RED_TEXT",
+      "originalValue": "72,800",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "72,800",
+      "placeholder": "72,800",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 375,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr",
+      "label": "INR /",
+      "source": "RED_TEXT",
+      "originalValue": "INR /",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "INR /",
+      "placeholder": "INR /",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 375,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-one-time",
+      "label": "One time",
+      "source": "RED_TEXT",
+      "originalValue": "One time",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "One time",
+      "placeholder": "One time",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 375,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-100-advance",
+      "label": "100% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "100% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "100% - Advance",
+      "placeholder": "100% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 376,
+          "runIndex": 0
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:31:28.855Z",
+  "updatedAt": "2026-09-21T09:31:28.855Z"
+}

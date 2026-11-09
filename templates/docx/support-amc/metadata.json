@@ -1,0 +1,761 @@
+{
+  "id": "support-amc",
+  "name": "Support AMC",
+  "slug": "support-amc",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 32,
+  "sectionsDetected": 4,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 15
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 5
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 3,
+      "fieldCount": 9
+    },
+    {
+      "id": "terms-conditions",
+      "title": "Terms & Conditions",
+      "order": 4,
+      "fieldCount": 3
+    }
+  ],
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 4
+        }
+      ]
+    },
+    {
+      "id": "quotation-number",
+      "label": "Quotation number",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation number]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 5
+        }
+      ]
+    },
+    {
+      "id": "customer-details",
+      "label": "Customer details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer details]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 8
+        }
+      ]
+    },
+    {
+      "id": "application-support-retainer-amc-infrastructure-technical-support",
+      "label": "APPLICATION SUPPORT RETAINER / AMC / INFRASTRUCTURE & TECHNICAL SUPPORT",
+      "source": "PLACEHOLDER",
+      "originalValue": "[APPLICATION SUPPORT RETAINER / AMC / INFRASTRUCTURE & TECHNICAL SUPPORT]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "APPLICATION SUPPORT RETAINER",
+        "AMC",
+        "INFRASTRUCTURE & TECHNICAL SUPPORT"
+      ],
+      "placeholder": "Enter APPLICATION SUPPORT RETAINER / AMC / INFRASTRUCTURE & TECHNICAL SUPPORT",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 10
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 27
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        }
+      ]
+    },
+    {
+      "id": "application-system-infrastructure-name",
+      "label": "Application / System / Infrastructure Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Application / System / Infrastructure Name]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Application",
+        "System",
+        "Infrastructure Name"
+      ],
+      "placeholder": "Enter Application / System / Infrastructure Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 14
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 15
+        }
+      ]
+    },
+    {
+      "id": "application-support-retainer-annual-maintenance-contract-amc-infrastructure-technical-support-other-service-type",
+      "label": "Application Support Retainer / Annual Maintenance Contract (AMC) / Infrastructure & Technical Support / Other Service Type",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Application Support Retainer / Annual Maintenance Contract (AMC) / Infrastructure & Technical Support / Other Service Type]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Application Support Retainer",
+        "Annual Maintenance Contract (AMC)",
+        "Infrastructure & Technical Support",
+        "Other Service Type"
+      ],
+      "placeholder": "Enter Application Support Retainer / Annual Maintenance Contract (AMC) / Infrastructure & Technical Support / Other Service Type",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 15
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 21
+        }
+      ]
+    },
+    {
+      "id": "application-system-name",
+      "label": "Application / System Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Application / System Name]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Application",
+        "System Name"
+      ],
+      "placeholder": "Enter Application / System Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 23
+        }
+      ]
+    },
+    {
+      "id": "technology-framework-database-os",
+      "label": "Technology / Framework / Database / OS",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Technology / Framework / Database / OS]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Technology",
+        "Framework",
+        "Database",
+        "OS"
+      ],
+      "placeholder": "Enter Technology / Framework / Database / OS",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 25
+        }
+      ]
+    },
+    {
+      "id": "monthly-quarterly-annual",
+      "label": "Monthly / Quarterly / Annual",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Monthly / Quarterly / Annual]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Monthly",
+        "Quarterly",
+        "Annual"
+      ],
+      "placeholder": "Enter Monthly / Quarterly / Annual",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 29
+        }
+      ]
+    },
+    {
+      "id": "xx-hours-month-or-annual-allocation",
+      "label": "XX Hours / Month or Annual Allocation",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX Hours / Month or Annual Allocation]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "XX Hours",
+        "Month or Annual Allocation"
+      ],
+      "placeholder": "Enter XX Hours / Month or Annual Allocation",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 31
+        }
+      ]
+    },
+    {
+      "id": "xxxx",
+      "label": "XXXX",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XXXX]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter XXXX",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 33
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 35
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 143
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 144
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 147
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 148
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 151
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 152
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 162
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 165
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 168
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 171
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 178
+        }
+      ]
+    },
+    {
+      "id": "start-date",
+      "label": "Start Date",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Start Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Start Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 37
+        }
+      ]
+    },
+    {
+      "id": "end-date",
+      "label": "End Date",
+      "source": "PLACEHOLDER",
+      "originalValue": "[End Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter End Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 37
+        }
+      ]
+    },
+    {
+      "id": "business-hours-247-as-agreed",
+      "label": "Business Hours / 24×7 / As Agreed",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Business Hours / 24×7 / As Agreed]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Business Hours",
+        "24×7",
+        "As Agreed"
+      ],
+      "placeholder": "Enter Business Hours / 24×7 / As Agreed",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 39
+        }
+      ]
+    },
+    {
+      "id": "nextjs-react-angular-html-other",
+      "label": "Next.js / React / Angular / HTML / Other",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Next.js / React / Angular / HTML / Other]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "Next.js",
+        "React",
+        "Angular",
+        "HTML",
+        "Other"
+      ],
+      "placeholder": "Enter Next.js / React / Angular / HTML / Other",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        }
+      ]
+    },
+    {
+      "id": "python-php-java-nodejs-other",
+      "label": "Python / PHP / Java / Node.js / Other",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Python / PHP / Java / Node.js / Other]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "Python",
+        "PHP",
+        "Java",
+        "Node.js",
+        "Other"
+      ],
+      "placeholder": "Enter Python / PHP / Java / Node.js / Other",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        }
+      ]
+    },
+    {
+      "id": "postgresql-mysql-mongodb-other",
+      "label": "PostgreSQL / MySQL / MongoDB / Other",
+      "source": "PLACEHOLDER",
+      "originalValue": "[PostgreSQL / MySQL / MongoDB / Other]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Other"
+      ],
+      "placeholder": "Enter PostgreSQL / MySQL / MongoDB / Other",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        }
+      ]
+    },
+    {
+      "id": "aws-azure-hostinger-cpanel-on-premise-other",
+      "label": "AWS / Azure / Hostinger / cPanel / On-Premise / Other",
+      "source": "PLACEHOLDER",
+      "originalValue": "[AWS / Azure / Hostinger / cPanel / On-Premise / Other]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "AWS",
+        "Azure",
+        "Hostinger",
+        "cPanel",
+        "On-Premise",
+        "Other"
+      ],
+      "placeholder": "Enter AWS / Azure / Hostinger / cPanel / On-Premise / Other",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        }
+      ]
+    },
+    {
+      "id": "aws-azure-google-cloud-hostinger-godaddy-cpanel-on-premise-other",
+      "label": "AWS / Azure / Google Cloud / Hostinger / GoDaddy / cPanel / On-Premise / Other",
+      "source": "PLACEHOLDER",
+      "originalValue": "[ AWS / Azure / Google Cloud / Hostinger / GoDaddy / cPanel / On-Premise / Other ]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "AWS",
+        "Azure",
+        "Google Cloud",
+        "Hostinger",
+        "GoDaddy",
+        "cPanel",
+        "On-Premise",
+        "Other"
+      ],
+      "placeholder": "Enter AWS / Azure / Google Cloud / Hostinger / GoDaddy / cPanel / On-Premise / Other",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 95
+        }
+      ]
+    },
+    {
+      "id": "application-support-retainer",
+      "label": "Application Support Retainer",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Application Support Retainer]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter Application Support Retainer",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 141
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 160
+        }
+      ]
+    },
+    {
+      "id": "xx-hours-month",
+      "label": "XX Hours / Month",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX Hours / Month]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Commercials",
+      "options": [
+        "XX Hours",
+        "Month"
+      ],
+      "placeholder": "Enter XX Hours / Month",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 142
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 150
+        }
+      ]
+    },
+    {
+      "id": "amc-annual-maintenance",
+      "label": "AMC / Annual Maintenance",
+      "source": "PLACEHOLDER",
+      "originalValue": "[AMC / Annual Maintenance]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Commercials",
+      "options": [
+        "AMC",
+        "Annual Maintenance"
+      ],
+      "placeholder": "Enter AMC / Annual Maintenance",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 145
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 163
+        }
+      ]
+    },
+    {
+      "id": "xx-hours-year-as-agreed",
+      "label": "XX Hours / Year / As Agreed",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX Hours / Year / As Agreed]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Commercials",
+      "options": [
+        "XX Hours",
+        "Year",
+        "As Agreed"
+      ],
+      "placeholder": "Enter XX Hours / Year / As Agreed",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 146
+        }
+      ]
+    },
+    {
+      "id": "infrastructure-technical-support",
+      "label": "Infrastructure & Technical Support",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Infrastructure & Technical Support]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter Infrastructure & Technical Support",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 149
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 166
+        }
+      ]
+    },
+    {
+      "id": "xx-hours",
+      "label": "XX Hours",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX Hours]",
+      "required": true,
+      "type": "number",
+      "section": "Commercials",
+      "placeholder": "Enter XX Hours",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        }
+      ]
+    },
+    {
+      "id": "monthly-annual",
+      "label": "Monthly / Annual",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Monthly / Annual]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Commercials",
+      "options": [
+        "Monthly",
+        "Annual"
+      ],
+      "placeholder": "Enter Monthly / Annual",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 170
+        }
+      ]
+    },
+    {
+      "id": "xx-support-hours",
+      "label": "XX support hours",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX support hours]",
+      "required": true,
+      "type": "number",
+      "section": "Commercials",
+      "placeholder": "Enter XX support hours",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 176
+        }
+      ]
+    },
+    {
+      "id": "xx",
+      "label": "XX",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter XX",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 221
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 274
+        }
+      ]
+    },
+    {
+      "id": "cannot-be-carried-forward-may-be-carried-forward-subject-to-the-agreed-terms",
+      "label": "cannot be carried forward / may be carried forward subject to the agreed terms",
+      "source": "PLACEHOLDER",
+      "originalValue": "[cannot be carried forward / may be carried forward subject to the agreed terms]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Terms & Conditions",
+      "options": [
+        "cannot be carried forward",
+        "may be carried forward subject to the agreed terms"
+      ],
+      "placeholder": "Enter cannot be carried forward / may be carried forward subject to the agreed terms",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 238
+        }
+      ]
+    },
+    {
+      "id": "yes-no",
+      "label": "Yes / No",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Yes / No]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Terms & Conditions",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "placeholder": "Enter Yes / No",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 264
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 266
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 268
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 270
+        }
+      ]
+    },
+    {
+      "id": "service-name",
+      "label": "Service Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Service Name]",
+      "required": true,
+      "type": "text",
+      "section": "Terms & Conditions",
+      "placeholder": "Enter Service Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 272
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:18.766Z",
+  "updatedAt": "2026-09-21T09:24:18.766Z"
+}

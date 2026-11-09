@@ -1,0 +1,117 @@
+{
+  "id": "n8n-automation",
+  "name": "N8N Automation",
+  "slug": "n8n-automation",
+  "format": "pptx",
+  "file": "template.pptx",
+  "active": true,
+  "fieldsDetected": 6,
+  "sectionsDetected": 2,
+  "sections": [
+    {
+      "id": "cover-client-information",
+      "title": "Cover & Client Information",
+      "order": 1,
+      "fieldCount": 3
+    },
+    {
+      "id": "slide-10-payment-terms",
+      "title": "Slide 10: Payment Terms",
+      "order": 2,
+      "fieldCount": 3
+    }
+  ],
+  "fields": [
+    {
+      "id": "customer-name",
+      "label": "Client / Company Name",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[CLIENT / COMPANY NAME]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "quotation-no",
+      "label": "Quotation Number",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[QUOTATION NO]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Quotation Date",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[DATE]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "1800",
+      "label": "Amount / Rate (₹ 1,800)",
+      "type": "text",
+      "section": "Slide 10: Payment Terms",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[1,800]",
+      "defaultValue": "1,800",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide10.xml"
+        }
+      ]
+    },
+    {
+      "id": "9000",
+      "label": "Amount / Rate (₹ 9,000)",
+      "type": "text",
+      "section": "Slide 10: Payment Terms",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[9,000]",
+      "defaultValue": "9,000",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide10.xml"
+        }
+      ]
+    },
+    {
+      "id": "36000",
+      "label": "Amount / Rate (₹ 36,000)",
+      "type": "text",
+      "section": "Slide 10: Payment Terms",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[36,000]",
+      "defaultValue": "36,000",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide10.xml"
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-23T07:50:11.980Z",
+  "updatedAt": "2026-09-23T07:50:11.980Z"
+}

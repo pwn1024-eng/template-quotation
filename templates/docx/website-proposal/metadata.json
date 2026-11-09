@@ -1,0 +1,498 @@
+{
+  "id": "website-proposal",
+  "name": "Website Proposal",
+  "slug": "website-proposal",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 23,
+  "sectionsDetected": 4,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 7
+    },
+    {
+      "id": "project-overview",
+      "title": "Project Overview",
+      "order": 2,
+      "fieldCount": 7
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 3,
+      "fieldCount": 6
+    },
+    {
+      "id": "terms-conditions",
+      "title": "Terms & Conditions",
+      "order": 4,
+      "fieldCount": 3
+    }
+  ],
+  "fields": [
+    {
+      "id": "client-company-name",
+      "label": "CLIENT / COMPANY NAME",
+      "source": "PLACEHOLDER",
+      "originalValue": "[CLIENT / COMPANY NAME]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "CLIENT",
+        "COMPANY NAME"
+      ],
+      "placeholder": "Enter CLIENT / COMPANY NAME",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 4
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 7
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 14
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 15
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 18
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 33
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 209
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 212
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 241
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 354
+        }
+      ]
+    },
+    {
+      "id": "client-contact-name",
+      "label": "CLIENT CONTACT NAME",
+      "source": "PLACEHOLDER",
+      "originalValue": "[CLIENT CONTACT NAME]",
+      "required": true,
+      "type": "phone",
+      "section": "Cover Letter",
+      "placeholder": "Enter CLIENT CONTACT NAME",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 7
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 13
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "DATE",
+      "source": "SYSTEM",
+      "originalValue": "[DATE]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter DATE",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 8
+        }
+      ]
+    },
+    {
+      "id": "quotation-number",
+      "label": "QUOTATION NUMBER",
+      "source": "SYSTEM",
+      "originalValue": "[QUOTATION NUMBER]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter QUOTATION NUMBER",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "label": "15",
+      "source": "PLACEHOLDER",
+      "originalValue": "[15]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter 15",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 10
+        }
+      ]
+    },
+    {
+      "id": "brief-description-of-the-companybusiness-and-industry",
+      "label": "brief description of the company/business and industry",
+      "source": "PLACEHOLDER",
+      "originalValue": "[brief description of the company/business and industry]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "brief description of the company",
+        "business and industry"
+      ],
+      "placeholder": "Enter brief description of the company/business and industry",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 18
+        }
+      ]
+    },
+    {
+      "id": "industrybusiness-category",
+      "label": "industry/business category",
+      "source": "PLACEHOLDER",
+      "originalValue": "[industry/business category]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "industry",
+        "business category"
+      ],
+      "placeholder": "Enter industry/business category",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 19
+        }
+      ]
+    },
+    {
+      "id": "number",
+      "label": "Number",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Number]",
+      "required": true,
+      "type": "number",
+      "section": "Project Overview",
+      "placeholder": "Enter Number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 44
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 138
+        }
+      ]
+    },
+    {
+      "id": "service-product-page-1",
+      "label": "Service / Product Page 1",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Service / Product Page 1]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Project Overview",
+      "options": [
+        "Service",
+        "Product Page 1"
+      ],
+      "placeholder": "Enter Service / Product Page 1",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        }
+      ]
+    },
+    {
+      "id": "service-product-page-2",
+      "label": "Service / Product Page 2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Service / Product Page 2]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Project Overview",
+      "options": [
+        "Service",
+        "Product Page 2"
+      ],
+      "placeholder": "Enter Service / Product Page 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 61
+        }
+      ]
+    },
+    {
+      "id": "service-product-page-3",
+      "label": "Service / Product Page 3",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Service / Product Page 3]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Project Overview",
+      "options": [
+        "Service",
+        "Product Page 3"
+      ],
+      "placeholder": "Enter Service / Product Page 3",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 64
+        }
+      ]
+    },
+    {
+      "id": "company-name",
+      "label": "Company Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Company Name]",
+      "required": true,
+      "type": "text",
+      "section": "Project Overview",
+      "placeholder": "Enter Company Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 70
+        }
+      ]
+    },
+    {
+      "id": "additional-page",
+      "label": "Additional Page",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Additional Page]",
+      "required": true,
+      "type": "text",
+      "section": "Project Overview",
+      "placeholder": "Enter Additional Page",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 85
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 88
+        }
+      ]
+    },
+    {
+      "id": "description",
+      "label": "Description",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Description]",
+      "required": true,
+      "type": "textarea",
+      "section": "Project Overview",
+      "placeholder": "Enter Description",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 86
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 89
+        }
+      ]
+    },
+    {
+      "id": "amount",
+      "label": "Amount",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Amount]",
+      "required": true,
+      "type": "currency",
+      "section": "Commercials",
+      "placeholder": "Enter Amount",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 252
+        }
+      ]
+    },
+    {
+      "id": "rate",
+      "label": "RATE",
+      "source": "PLACEHOLDER",
+      "originalValue": "[RATE]",
+      "required": true,
+      "type": "currency",
+      "section": "Commercials",
+      "placeholder": "Enter RATE",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 260
+        }
+      ]
+    },
+    {
+      "id": "5000",
+      "label": "5,000",
+      "source": "PLACEHOLDER",
+      "originalValue": "[5,000]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter 5,000",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 261
+        }
+      ]
+    },
+    {
+      "id": "12000",
+      "label": "12,000",
+      "source": "PLACEHOLDER",
+      "originalValue": "[12,000]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter 12,000",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 293
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "label": "2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[2]",
+      "required": true,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 297
+        }
+      ]
+    },
+    {
+      "id": "red-15",
+      "label": "15",
+      "source": "RED_TEXT",
+      "originalValue": "15",
+      "required": false,
+      "type": "text",
+      "section": "Terms & Conditions",
+      "defaultValue": "15",
+      "placeholder": "15",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 10,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-s",
+      "label": "’s",
+      "source": "RED_TEXT",
+      "originalValue": "’s",
+      "required": false,
+      "type": "text",
+      "section": "Terms & Conditions",
+      "defaultValue": "’s",
+      "placeholder": "’s",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 14,
+          "runIndex": 8
+        }
+      ]
+    },
+    {
+      "id": "red-5000",
+      "label": "5,000",
+      "source": "RED_TEXT",
+      "originalValue": "5,000",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "5,000",
+      "placeholder": "5,000",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 261,
+          "runIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "red-12000",
+      "label": "12,000",
+      "source": "RED_TEXT",
+      "originalValue": "12,000",
+      "required": false,
+      "type": "text",
+      "section": "Terms & Conditions",
+      "defaultValue": "12,000",
+      "placeholder": "12,000",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 293,
+          "runIndex": 2
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:18.946Z",
+  "updatedAt": "2026-09-21T09:24:18.946Z"
+}

@@ -1,0 +1,204 @@
+{
+  "id": "digital-marketing",
+  "name": "Digital Marketing",
+  "slug": "digital-marketing",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 7,
+  "sectionsDetected": 3,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 3
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 1
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 3,
+      "fieldCount": 3
+    }
+  ],
+  "fields": [
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 4
+        }
+      ]
+    },
+    {
+      "id": "quotation-number",
+      "label": "Quotation number",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation number]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 5
+        }
+      ]
+    },
+    {
+      "id": "customer-details",
+      "label": "Customer details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer details]",
+      "required": false,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 8
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "label": "X",
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter X",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 17
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 19
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 19
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 44
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 46
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 50
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 59
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 132
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 135
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 154
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 174
+        }
+      ]
+    },
+    {
+      "id": "xxxx",
+      "label": "X,XXX",
+      "source": "PLACEHOLDER",
+      "originalValue": "[X,XXX]",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter X,XXX",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 134
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 137
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 146
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 148
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 152
+        }
+      ]
+    },
+    {
+      "id": "xxx",
+      "label": "XXX",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XXX]",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter XXX",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 139
+        }
+      ]
+    },
+    {
+      "id": "xxxxx",
+      "label": "XX,XXX",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XX,XXX]",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter XX,XXX",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 150
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-23T06:49:43.026Z",
+  "updatedAt": "2026-09-23T06:49:43.026Z"
+}

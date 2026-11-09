@@ -1,0 +1,75 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Template {
+  id               String      @id
+  name             String
+  slug             String      @unique
+  description      String?
+  format           String      @default("docx")
+  path             String
+  category         String?
+  fieldsDetected   Int         @default(0)
+  sectionsDetected Int         @default(0)
+  metadataJson     String?
+  active           Boolean     @default(true)
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  quotations       Quotation[]
+}
+
+model Quotation {
+  id              String             @id @default(cuid())
+  quotationNumber String             @unique
+  templateId      String
+  template        Template           @relation(fields: [templateId], references: [id], onDelete: Cascade)
+  customerName    String
+  customerDetails String?
+  title           String
+  status          String             @default("DRAFT")
+  totalAmount     String?
+  currency        String             @default("INR")
+  currentVersion  Int                @default(1)
+  createdAt       DateTime           @default(now())
+  updatedAt       DateTime           @updatedAt
+  versions        QuotationVersion[]
+  files           DocumentFile[]
+}
+
+model QuotationVersion {
+  id             String         @id @default(cuid())
+  quotationId    String
+  quotation      Quotation      @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  versionNumber  Int
+  fieldData      String
+  documentState  String?
+  notes          String?
+  createdAt      DateTime       @default(now())
+  files          DocumentFile[]
+}
+
+model DocumentFile {
+  id          String            @id @default(cuid())
+  quotationId String
+  quotation   Quotation         @relation(fields: [quotationId], references: [id], onDelete: Cascade)
+  versionId   String?
+  version     QuotationVersion? @relation(fields: [versionId], references: [id], onDelete: SetNull)
+  type        String
+  filePath    String
+  fileName    String
+  fileSize    Int               @default(0)
+  createdAt   DateTime          @default(now())
+}
+
+model Setting {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}

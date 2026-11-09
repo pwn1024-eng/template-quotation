@@ -1,0 +1,740 @@
+{
+  "id": "mawalog-propsal-for-transports",
+  "name": "MAWALOG - Proposal-for-transports",
+  "slug": "mawalog-propsal-for-transports",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 38,
+  "sectionsDetected": 2,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 4
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 34
+    }
+  ],
+  "fields": [
+    {
+      "id": "quotation-no",
+      "label": "Quotation No",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation No]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation No",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "customer-details",
+      "label": "Customer Details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Details]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 7
+        }
+      ]
+    },
+    {
+      "id": "red-s-no",
+      "label": "S. No",
+      "source": "RED_TEXT",
+      "originalValue": "S. No",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "S. No",
+      "placeholder": "S. No",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 120,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-particulars",
+      "label": "Particulars",
+      "source": "RED_TEXT",
+      "originalValue": "Particulars",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Particulars",
+      "placeholder": "Particulars",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 121,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-amount-inr",
+      "label": "Amount INR",
+      "source": "RED_TEXT",
+      "originalValue": "Amount INR",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "Amount INR",
+      "placeholder": "Amount INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 122,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-remarks",
+      "label": "Remarks",
+      "source": "RED_TEXT",
+      "originalValue": "Remarks",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Remarks",
+      "placeholder": "Remarks",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 123,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-1",
+      "label": "1.",
+      "source": "RED_TEXT",
+      "originalValue": "1.",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "1.",
+      "placeholder": "1.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 124,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-onboarding-one-time-implementation",
+      "label": "Onboarding & One-time Implemen...",
+      "source": "RED_TEXT",
+      "originalValue": "Onboarding & One-time Implementation",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Onboarding & One-time Implementation",
+      "placeholder": "Onboarding & One-time Implementation",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 125,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-25",
+      "label": "25",
+      "source": "RED_TEXT",
+      "originalValue": "25",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "25",
+      "placeholder": "25",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 126,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-000-inr-one-time",
+      "label": ",000 INR / One time",
+      "source": "RED_TEXT",
+      "originalValue": ",000 INR / One time",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": ",000 INR / One time",
+      "placeholder": ",000 INR / One time",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 126,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-60-advance",
+      "label": "60% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "60% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "60% - Advance",
+      "placeholder": "60% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 127,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-40-sign-off",
+      "label": "40% - Sign off",
+      "source": "RED_TEXT",
+      "originalValue": "40% - Sign off",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "40% - Sign off",
+      "placeholder": "40% - Sign off",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 128,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-minimum",
+      "label": "Minimum",
+      "source": "RED_TEXT",
+      "originalValue": "Minimum",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Minimum",
+      "placeholder": "Minimum",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 129,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-user-subscription-needed",
+      "label": "-user subscription needed.",
+      "source": "RED_TEXT",
+      "originalValue": "-user subscription needed.",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "-user subscription needed.",
+      "placeholder": "-user subscription needed.",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 129,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-users-subscription-not-included",
+      "label": "Users' Subscription not includ...",
+      "source": "RED_TEXT",
+      "originalValue": "Users' Subscription not included",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Users' Subscription not included",
+      "placeholder": "Users' Subscription not included",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 130,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-2",
+      "label": "2.",
+      "source": "RED_TEXT",
+      "originalValue": "2.",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "2.",
+      "placeholder": "2.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 131,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-sales-person",
+      "label": "Sales Person",
+      "source": "RED_TEXT",
+      "originalValue": "Sales Person",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Sales Person",
+      "placeholder": "Sales Person",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 132,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-199",
+      "label": "199",
+      "source": "RED_TEXT",
+      "originalValue": "199",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "199",
+      "placeholder": "199",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 133,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr-per",
+      "label": "INR / Per",
+      "source": "RED_TEXT",
+      "originalValue": "INR / Per",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "INR / Per",
+      "placeholder": "INR / Per",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 133,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-user",
+      "label": "User",
+      "source": "RED_TEXT",
+      "originalValue": "User",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "User",
+      "placeholder": "User",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 133,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-per-month",
+      "label": "/ Per Month",
+      "source": "RED_TEXT",
+      "originalValue": "/ Per Month",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "/ Per Month",
+      "placeholder": "/ Per Month",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 133,
+          "runIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "red-100-advance",
+      "label": "100% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "100% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "100% - Advance",
+      "placeholder": "100% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 134,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-from-go-live",
+      "label": "From Go Live",
+      "source": "RED_TEXT",
+      "originalValue": "From Go Live",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "From Go Live",
+      "placeholder": "From Go Live",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 135,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-maximum-3000-transactions",
+      "label": "Maximum 3000 Transactions",
+      "source": "RED_TEXT",
+      "originalValue": "Maximum 3000 Transactions",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Maximum 3000 Transactions",
+      "placeholder": "Maximum 3000 Transactions",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 136,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-3",
+      "label": "3.",
+      "source": "RED_TEXT",
+      "originalValue": "3.",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "3.",
+      "placeholder": "3.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 137,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-driver",
+      "label": "Driver",
+      "source": "RED_TEXT",
+      "originalValue": "Driver",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Driver",
+      "placeholder": "Driver",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 138,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-1-to-10-999-inr-per-vehicles",
+      "label": "1 to 10 – 999 INR / Per Vehicl...",
+      "source": "RED_TEXT",
+      "originalValue": "1 to 10 – 999 INR / Per Vehicles",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "1 to 10 – 999 INR / Per Vehicles",
+      "placeholder": "1 to 10 – 999 INR / Per Vehicles",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 139,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-11-to-30-899-inr-per-vehicles",
+      "label": "11 to 30 – 899 INR / Per Vehic...",
+      "source": "RED_TEXT",
+      "originalValue": "11 to 30 – 899 INR / Per Vehicles",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "11 to 30 – 899 INR / Per Vehicles",
+      "placeholder": "11 to 30 – 899 INR / Per Vehicles",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 140,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-31-to-70-799-inr-per-vehicles",
+      "label": "31 to 70 – 799 INR / Per Vehic...",
+      "source": "RED_TEXT",
+      "originalValue": "31 to 70 – 799 INR / Per Vehicles",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "31 to 70 – 799 INR / Per Vehicles",
+      "placeholder": "31 to 70 – 799 INR / Per Vehicles",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 141,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-71-to-150-699-inr-per-vehicles",
+      "label": "71 to 150 – 699 INR / Per Vehi...",
+      "source": "RED_TEXT",
+      "originalValue": "71 to 150 – 699 INR / Per Vehicles",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "71 to 150 – 699 INR / Per Vehicles",
+      "placeholder": "71 to 150 – 699 INR / Per Vehicles",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 142,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-151-to",
+      "label": "151 to",
+      "source": "RED_TEXT",
+      "originalValue": "151 to",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "151 to",
+      "placeholder": "151 to",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 143,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-above",
+      "label": "above –",
+      "source": "RED_TEXT",
+      "originalValue": "above –",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "above –",
+      "placeholder": "above –",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 143,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-599-inr-per-vehicles",
+      "label": "599 INR / Per Vehicles",
+      "source": "RED_TEXT",
+      "originalValue": "599 INR / Per Vehicles",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "599 INR / Per Vehicles",
+      "placeholder": "599 INR / Per Vehicles",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 143,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-additional-customization",
+      "label": "Additional Customization",
+      "source": "RED_TEXT",
+      "originalValue": "Additional Customization",
+      "required": false,
+      "type": "text",
+      "section": "Scope of Work",
+      "defaultValue": "Additional Customization",
+      "placeholder": "Additional Customization",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 148,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-1100-inr-per-hour",
+      "label": "1100 INR / Per Hour",
+      "source": "RED_TEXT",
+      "originalValue": "1100 INR / Per Hour",
+      "required": false,
+      "type": "currency",
+      "section": "Scope of Work",
+      "defaultValue": "1100 INR / Per Hour",
+      "placeholder": "1100 INR / Per Hour",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 149,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-hours-will-be-calculated-based-on-the-sp",
+      "label": "Hours will be calculated based...",
+      "source": "RED_TEXT",
+      "originalValue": "Hours will be calculated based on the specific requirements",
+      "required": false,
+      "type": "number",
+      "section": "Scope of Work",
+      "defaultValue": "Hours will be calculated based on the specific requirements",
+      "placeholder": "Hours will be calculated based on the specific requirements",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 150,
+          "runIndex": 0
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:18.323Z",
+  "updatedAt": "2026-09-21T09:24:18.323Z"
+}

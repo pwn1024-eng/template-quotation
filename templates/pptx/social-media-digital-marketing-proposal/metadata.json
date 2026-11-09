@@ -1,0 +1,228 @@
+{
+  "id": "social-media-digital-marketing-proposal",
+  "name": "Social Media Digital Marketing Proposal",
+  "slug": "social-media-digital-marketing-proposal",
+  "format": "pptx",
+  "file": "template.pptx",
+  "active": true,
+  "fieldsDetected": 11,
+  "sectionsDetected": 8,
+  "sections": [
+    {
+      "id": "cover-client-information",
+      "title": "Cover & Client Information",
+      "order": 1,
+      "fieldCount": 3
+    },
+    {
+      "id": "slide-1-digital-presence-social-media-brand-visibility",
+      "title": "Slide 1: DIGITAL PRESENCE | SOCIAL MEDIA | BRAND VISIBILITY",
+      "order": 2,
+      "fieldCount": 1
+    },
+    {
+      "id": "slide-2-whats-included",
+      "title": "Slide 2: WHAT'S INCLUDED",
+      "order": 3,
+      "fieldCount": 2
+    },
+    {
+      "id": "slide-4-how-well-work-together",
+      "title": "Slide 4: HOW WE'LL WORK TOGETHER",
+      "order": 4,
+      "fieldCount": 1
+    },
+    {
+      "id": "slide-5-content-every-month",
+      "title": "Slide 5: CONTENT, EVERY MONTH",
+      "order": 5,
+      "fieldCount": 1
+    },
+    {
+      "id": "slide-17-investment",
+      "title": "Slide 17: INVESTMENT",
+      "order": 6,
+      "fieldCount": 1
+    },
+    {
+      "id": "slide-18-investment",
+      "title": "Slide 18: INVESTMENT",
+      "order": 7,
+      "fieldCount": 1
+    },
+    {
+      "id": "slide-19-please-review",
+      "title": "Slide 19: PLEASE REVIEW",
+      "order": 8,
+      "fieldCount": 1
+    }
+  ],
+  "fields": [
+    {
+      "id": "customer-name",
+      "label": "Client / Company Name",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[CLIENT / COMPANY NAME]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "quotation-no",
+      "label": "Quotation Number",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[QUOTATION NO]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Quotation Date",
+      "type": "text",
+      "section": "Cover & Client Information",
+      "required": true,
+      "source": "SYSTEM",
+      "originalValue": "[DATE]",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "date-s1",
+      "label": "DATE",
+      "type": "text",
+      "section": "Slide 1: DIGITAL PRESENCE | SOCIAL MEDIA | BRAND VISIBILITY",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[DATE]",
+      "defaultValue": "DATE",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide1.xml"
+        }
+      ]
+    },
+    {
+      "id": "x",
+      "label": "Quantity / Value (WHAT'S INCLUDED)",
+      "type": "text",
+      "section": "Slide 2: WHAT'S INCLUDED",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "defaultValue": "X",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide2.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s2",
+      "label": "Quantity / Value (WHAT'S INCLUDED)",
+      "type": "text",
+      "section": "Slide 2: WHAT'S INCLUDED",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "defaultValue": "X",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide2.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s4",
+      "label": "Quantity / Value (HOW WE'LL WORK TOGETHER)",
+      "type": "text",
+      "section": "Slide 4: HOW WE'LL WORK TOGETHER",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "defaultValue": "X",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide4.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s5",
+      "label": "Quantity / Value (CONTENT, EVERY MONTH)",
+      "type": "text",
+      "section": "Slide 5: CONTENT, EVERY MONTH",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "defaultValue": "X",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide5.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s17",
+      "label": "Quantity / Value (INVESTMENT)",
+      "type": "text",
+      "section": "Slide 17: INVESTMENT",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[X]",
+      "defaultValue": "X",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide17.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s18",
+      "label": "Quantity / Value (INVESTMENT)",
+      "type": "text",
+      "section": "Slide 18: INVESTMENT",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[x]",
+      "defaultValue": "x",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide18.xml"
+        }
+      ]
+    },
+    {
+      "id": "x-s19",
+      "label": "Quantity / Value (PLEASE REVIEW)",
+      "type": "text",
+      "section": "Slide 19: PLEASE REVIEW",
+      "required": false,
+      "source": "PLACEHOLDER",
+      "originalValue": "[x]",
+      "defaultValue": "x",
+      "locations": [
+        {
+          "documentPart": "ppt/slides/slide19.xml"
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-23T07:50:12.328Z",
+  "updatedAt": "2026-09-23T07:50:12.328Z"
+}

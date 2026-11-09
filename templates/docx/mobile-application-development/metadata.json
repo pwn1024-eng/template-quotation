@@ -1,0 +1,1133 @@
+{
+  "id": "mobile-application-development",
+  "name": "Mobile Application Development",
+  "slug": "mobile-application-development",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 56,
+  "sectionsDetected": 3,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 22
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 1
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 3,
+      "fieldCount": 33
+    }
+  ],
+  "fields": [
+    {
+      "id": "quotation-number",
+      "label": "Quotation Number",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation Number]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation Number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "client-details",
+      "label": "Client Details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Client Details]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Client Details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "mobile-application-name",
+      "label": "Mobile Application Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Mobile Application Name]",
+      "required": true,
+      "type": "phone",
+      "section": "Cover Letter",
+      "placeholder": "Enter Mobile Application Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 4
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 8
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 22
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 31
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 47
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 89
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 181
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 274
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 307
+        }
+      ]
+    },
+    {
+      "id": "client-name",
+      "label": "Client Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Client Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Client Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 6
+        }
+      ]
+    },
+    {
+      "id": "client-company-name",
+      "label": "Client Company Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Client Company Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Client Company Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "briefly-describe-the-primary-business-objective",
+      "label": "briefly describe the primary business objective",
+      "source": "PLACEHOLDER",
+      "originalValue": "[briefly describe the primary business objective]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter briefly describe the primary business objective",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 9
+        }
+      ]
+    },
+    {
+      "id": "describe-the-primary-activitiesworkflows",
+      "label": "describe the primary activities/workflows",
+      "source": "PLACEHOLDER",
+      "originalValue": "[describe the primary activities/workflows]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "describe the primary activities",
+        "workflows"
+      ],
+      "placeholder": "Enter describe the primary activities/workflows",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 10
+        }
+      ]
+    },
+    {
+      "id": "customers-existing-backend-apis-third-party-systems",
+      "label": "Customer's Existing Backend / APIs / Third-Party Systems",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer's Existing Backend / APIs / Third-Party Systems]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Customer's Existing Backend",
+        "APIs",
+        "Third-Party Systems"
+      ],
+      "placeholder": "Enter Customer's Existing Backend / APIs / Third-Party Systems",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 11
+        }
+      ]
+    },
+    {
+      "id": "describe-the-purpose-of-the-application",
+      "label": "describe the purpose of the application",
+      "source": "PLACEHOLDER",
+      "originalValue": "[describe the purpose of the application]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter describe the purpose of the application",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 22
+        }
+      ]
+    },
+    {
+      "id": "target-users-user-groups",
+      "label": "target users / user groups",
+      "source": "PLACEHOLDER",
+      "originalValue": "[target users / user groups]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "target users",
+        "user groups"
+      ],
+      "placeholder": "Enter target users / user groups",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 23
+        }
+      ]
+    },
+    {
+      "id": "business-functions-services-activities",
+      "label": "business functions / services / activities",
+      "source": "PLACEHOLDER",
+      "originalValue": "[business functions / services / activities]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "business functions",
+        "services",
+        "activities"
+      ],
+      "placeholder": "Enter business functions / services / activities",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 23
+        }
+      ]
+    },
+    {
+      "id": "rest-apis-graphql-other-integration-mechanism",
+      "label": "REST APIs / GraphQL / other integration mechanism",
+      "source": "PLACEHOLDER",
+      "originalValue": "[REST APIs / GraphQL / other integration mechanism]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "REST APIs",
+        "GraphQL",
+        "other integration mechanism"
+      ],
+      "placeholder": "Enter REST APIs / GraphQL / other integration mechanism",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 25
+        }
+      ]
+    },
+    {
+      "id": "target-users",
+      "label": "target users",
+      "source": "PLACEHOLDER",
+      "originalValue": "[target users]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter target users",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 31
+        }
+      ]
+    },
+    {
+      "id": "business-processes-activities",
+      "label": "business processes / activities",
+      "source": "PLACEHOLDER",
+      "originalValue": "[business processes / activities]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "business processes",
+        "activities"
+      ],
+      "placeholder": "Enter business processes / activities",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 31
+        }
+      ]
+    },
+    {
+      "id": "records-transactions-tasks",
+      "label": "records / transactions / tasks",
+      "source": "PLACEHOLDER",
+      "originalValue": "[records / transactions / tasks]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "records",
+        "transactions",
+        "tasks"
+      ],
+      "placeholder": "Enter records / transactions / tasks",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 37
+        }
+      ]
+    },
+    {
+      "id": "forms-requests-transactions-updates",
+      "label": "forms / requests / transactions / updates",
+      "source": "PLACEHOLDER",
+      "originalValue": "[forms / requests / transactions / updates]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "forms",
+        "requests",
+        "transactions",
+        "updates"
+      ],
+      "placeholder": "Enter forms / requests / transactions / updates",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 41
+        }
+      ]
+    },
+    {
+      "id": "module-1",
+      "label": "Module 1",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 1]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Module 1",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 54
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 195
+        }
+      ]
+    },
+    {
+      "id": "description-of-modulefunctionality",
+      "label": "Description of module/functionality.",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Description of module/functionality.]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Description of module",
+        "functionality."
+      ],
+      "placeholder": "Enter Description of module/functionality.",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 55
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 57
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 59
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 61
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "label": "Module 2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 2]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Module 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 56
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 196
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "label": "Module 3",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 3]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Module 3",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 197
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "label": "Module 4",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 4]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Module 4",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 60
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 198
+        }
+      ]
+    },
+    {
+      "id": "additional-module",
+      "label": "Additional Module",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Additional Module]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Additional Module",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 202
+        }
+      ]
+    },
+    {
+      "id": "red-sno",
+      "label": "S.No",
+      "source": "RED_TEXT",
+      "originalValue": "S.No",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "S.No",
+      "placeholder": "S.No",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 277,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-particulars",
+      "label": "Particulars",
+      "source": "RED_TEXT",
+      "originalValue": "Particulars",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Particulars",
+      "placeholder": "Particulars",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 278,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-amount-inr",
+      "label": "Amount INR",
+      "source": "RED_TEXT",
+      "originalValue": "Amount INR",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "Amount INR",
+      "placeholder": "Amount INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 279,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-payment-terms",
+      "label": "Payment Terms",
+      "source": "RED_TEXT",
+      "originalValue": "Payment Terms",
+      "required": false,
+      "type": "textarea",
+      "section": "Commercials",
+      "defaultValue": "Payment Terms",
+      "placeholder": "Payment Terms",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 280,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-1",
+      "label": "1.",
+      "source": "RED_TEXT",
+      "originalValue": "1.",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "1.",
+      "placeholder": "1.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 281,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-kick-start",
+      "label": "Kick Start,",
+      "source": "RED_TEXT",
+      "originalValue": "Kick Start,",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Kick Start,",
+      "placeholder": "Kick Start,",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 282,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-workflow",
+      "label": "Workflow",
+      "source": "RED_TEXT",
+      "originalValue": "Workflow",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Workflow",
+      "placeholder": "Workflow",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 282,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-confirmation-wireframes-prototypes",
+      "label": "Confirmation, Wireframes & Pro...",
+      "source": "RED_TEXT",
+      "originalValue": "Confirmation, Wireframes & Prototypes",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Confirmation, Wireframes & Prototypes",
+      "placeholder": "Confirmation, Wireframes & Prototypes",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 282,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-xxxxxx",
+      "label": "XXXXXX",
+      "source": "RED_TEXT",
+      "originalValue": "XXXXXX",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "XXXXXX",
+      "placeholder": "XXXXXX",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 283,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr-one-time",
+      "label": "INR / One time",
+      "source": "RED_TEXT",
+      "originalValue": "INR / One time",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "INR / One time",
+      "placeholder": "INR / One time",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 283,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-0-advance",
+      "label": "0% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "0% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "0% - Advance",
+      "placeholder": "0% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 284,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-document",
+      "label": "% -",
+      "source": "RED_TEXT",
+      "originalValue": "% -",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "% -",
+      "placeholder": "% -",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 285,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-phase",
+      "label": "Phase",
+      "source": "RED_TEXT",
+      "originalValue": "Phase",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Phase",
+      "placeholder": "Phase",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 285,
+          "runIndex": 3
+        }
+      ]
+    },
+    {
+      "id": "red-20-phase",
+      "label": "20% - Phase",
+      "source": "RED_TEXT",
+      "originalValue": "20% - Phase",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "20% - Phase",
+      "placeholder": "20% - Phase",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 287,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-2",
+      "label": "2.",
+      "source": "RED_TEXT",
+      "originalValue": "2.",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "2.",
+      "placeholder": "2.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 288,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-applications-maintenance-support-charges",
+      "label": "Applications / Maintenance / S...",
+      "source": "RED_TEXT",
+      "originalValue": "Applications / Maintenance / Support Charges",
+      "required": false,
+      "type": "dropdown",
+      "section": "Commercials",
+      "defaultValue": "Applications / Maintenance / Support Charges",
+      "placeholder": "Applications / Maintenance / Support Charges",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 289,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-xxxxx",
+      "label": "XXXXX",
+      "source": "RED_TEXT",
+      "originalValue": "XXXXX",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "XXXXX",
+      "placeholder": "XXXXX",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 290,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr",
+      "label": "INR /",
+      "source": "RED_TEXT",
+      "originalValue": "INR /",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "INR /",
+      "placeholder": "INR /",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 290,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-per-year",
+      "label": "Per Year",
+      "source": "RED_TEXT",
+      "originalValue": "Per Year",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Per Year",
+      "placeholder": "Per Year",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 290,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-100-advance",
+      "label": "100% - Advance",
+      "source": "RED_TEXT",
+      "originalValue": "100% - Advance",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "100% - Advance",
+      "placeholder": "100% - Advance",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 291,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-from-go-live",
+      "label": "From Go Live",
+      "source": "RED_TEXT",
+      "originalValue": "From Go Live",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "From Go Live",
+      "placeholder": "From Go Live",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 292,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-additional-support",
+      "label": "Additional Support",
+      "source": "RED_TEXT",
+      "originalValue": "Additional Support",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Additional Support",
+      "placeholder": "Additional Support",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 294,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-xxxx",
+      "label": "XXXX",
+      "source": "RED_TEXT",
+      "originalValue": "XXXX",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "XXXX",
+      "placeholder": "XXXX",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 295,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr-per-hour",
+      "label": "INR / Per Hour",
+      "source": "RED_TEXT",
+      "originalValue": "INR / Per Hour",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "INR / Per Hour",
+      "placeholder": "INR / Per Hour",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 295,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-4",
+      "label": "4.",
+      "source": "RED_TEXT",
+      "originalValue": "4.",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "4.",
+      "placeholder": "4.",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 297,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-platform-charges-play-store-appstore",
+      "label": "Platform Charges (Play store, ...",
+      "source": "RED_TEXT",
+      "originalValue": "Platform Charges (Play store, Appstore)",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Platform Charges (Play store, Appstore)",
+      "placeholder": "Platform Charges (Play store, Appstore)",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 298,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-xxxxxm",
+      "label": "XXXXXM",
+      "source": "RED_TEXT",
+      "originalValue": "XXXXXM",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "XXXXXM",
+      "placeholder": "XXXXXM",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 299,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-inr-per-year",
+      "label": "INR / Per Year",
+      "source": "RED_TEXT",
+      "originalValue": "INR / Per Year",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "INR / Per Year",
+      "placeholder": "INR / Per Year",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 299,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-firebase-notification-charges",
+      "label": "Firebase Notification Charges",
+      "source": "RED_TEXT",
+      "originalValue": "Firebase Notification Charges",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Firebase Notification Charges",
+      "placeholder": "Firebase Notification Charges",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 302,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-approximate",
+      "label": "(Approximate)",
+      "source": "RED_TEXT",
+      "originalValue": "(Approximate)",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "(Approximate)",
+      "placeholder": "(Approximate)",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 302,
+          "runIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "red-mostly-free-up-to-3000",
+      "label": "Mostly Free / Up to 3,000",
+      "source": "RED_TEXT",
+      "originalValue": "Mostly Free / Up to 3,000",
+      "required": false,
+      "type": "dropdown",
+      "section": "Commercials",
+      "defaultValue": "Mostly Free / Up to 3,000",
+      "placeholder": "Mostly Free / Up to 3,000",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 303,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-per-month-for-high-usage",
+      "label": "+ per Month for High Usage",
+      "source": "RED_TEXT",
+      "originalValue": "+ per Month for High Usage",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "+ per Month for High Usage",
+      "placeholder": "+ per Month for High Usage",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 303,
+          "runIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "red-paid-directly-to-google",
+      "label": "Paid directly to Google",
+      "source": "RED_TEXT",
+      "originalValue": "Paid directly to Google",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Paid directly to Google",
+      "placeholder": "Paid directly to Google",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 304,
+          "runIndex": 0
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:18.668Z",
+  "updatedAt": "2026-09-21T09:24:18.668Z"
+}

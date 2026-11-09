@@ -1,0 +1,256 @@
+{
+  "id": "mawalog-proposal-for-crm",
+  "name": "MAWALOG - proposal-for-CRM",
+  "slug": "mawalog-proposal-for-crm",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 12,
+  "sectionsDetected": 2,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 2
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 2,
+      "fieldCount": 10
+    }
+  ],
+  "fields": [
+    {
+      "id": "quoation-number",
+      "label": "Quoation Number",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Quoation Number]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quoation Number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 5
+        }
+      ]
+    },
+    {
+      "id": "red-s-no",
+      "label": "S. No",
+      "source": "RED_TEXT",
+      "originalValue": "S. No",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "S. No",
+      "placeholder": "S. No",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 212,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-particulars",
+      "label": "Particulars",
+      "source": "RED_TEXT",
+      "originalValue": "Particulars",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Particulars",
+      "placeholder": "Particulars",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 213,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-amount-inr",
+      "label": "Amount INR",
+      "source": "RED_TEXT",
+      "originalValue": "Amount INR",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "Amount INR",
+      "placeholder": "Amount INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 214,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-remarks",
+      "label": "Remarks",
+      "source": "RED_TEXT",
+      "originalValue": "Remarks",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "Remarks",
+      "placeholder": "Remarks",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 215,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-mawalog-crm-web-application-subscription",
+      "label": "MAWALOG CRM - Web Application ...",
+      "source": "RED_TEXT",
+      "originalValue": "MAWALOG CRM - Web Application Subscription",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "MAWALOG CRM - Web Application Subscription",
+      "placeholder": "MAWALOG CRM - Web Application Subscription",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 217,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-240000-inr",
+      "label": "2,40,000 INR",
+      "source": "RED_TEXT",
+      "originalValue": "2,40,000 INR",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "2,40,000 INR",
+      "placeholder": "2,40,000 INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 218,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-60-advance-40-sign-off",
+      "label": "60% Advance / 40% Sign-off",
+      "source": "RED_TEXT",
+      "originalValue": "60% Advance / 40% Sign-off",
+      "required": false,
+      "type": "dropdown",
+      "section": "Commercials",
+      "defaultValue": "60% Advance / 40% Sign-off",
+      "placeholder": "60% Advance / 40% Sign-off",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 219,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-one-time-implementation-onboarding",
+      "label": "One-Time Implementation & Onbo...",
+      "source": "RED_TEXT",
+      "originalValue": "One-Time Implementation & Onboarding",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "One-Time Implementation & Onboarding",
+      "placeholder": "One-Time Implementation & Onboarding",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 221,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-60000-inr",
+      "label": "60,000 INR",
+      "source": "RED_TEXT",
+      "originalValue": "60,000 INR",
+      "required": false,
+      "type": "currency",
+      "section": "Commercials",
+      "defaultValue": "60,000 INR",
+      "placeholder": "60,000 INR",
+      "isEditableRedText": true,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 222,
+          "runIndex": 0
+        }
+      ]
+    },
+    {
+      "id": "red-user-training-go-live-support",
+      "label": "User Training & Go-Live Suppor...",
+      "source": "RED_TEXT",
+      "originalValue": "User Training & Go-Live Support",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "defaultValue": "User Training & Go-Live Support",
+      "placeholder": "User Training & Go-Live Support",
+      "isEditableRedText": false,
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 225,
+          "runIndex": 0
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:17.808Z",
+  "updatedAt": "2026-09-21T09:24:17.808Z"
+}

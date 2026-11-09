@@ -1,0 +1,690 @@
+{
+  "id": "web-application-development",
+  "name": "Web Application Development",
+  "slug": "web-application-development",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 33,
+  "sectionsDetected": 3,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 14
+    },
+    {
+      "id": "scope-of-work",
+      "title": "Scope of Work",
+      "order": 2,
+      "fieldCount": 18
+    },
+    {
+      "id": "terms-conditions",
+      "title": "Terms & Conditions",
+      "order": 3,
+      "fieldCount": 1
+    }
+  ],
+  "fields": [
+    {
+      "id": "quotation-number",
+      "label": "Quotation Number",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation Number]",
+      "required": true,
+      "type": "number",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation Number",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": true,
+      "type": "date",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "web-application-name-project-name",
+      "label": "Web Application Name / Project Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Web Application Name / Project Name]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Web Application Name",
+        "Project Name"
+      ],
+      "placeholder": "Enter Web Application Name / Project Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 6
+        }
+      ]
+    },
+    {
+      "id": "web-application-name",
+      "label": "Web Application Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Web Application Name]",
+      "required": true,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Web Application Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 19
+        }
+      ]
+    },
+    {
+      "id": "brief-description-of-primary-business-functions",
+      "label": "brief description of primary business functions",
+      "source": "PLACEHOLDER",
+      "originalValue": "[brief description of primary business functions]",
+      "required": true,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter brief description of primary business functions",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 19
+        }
+      ]
+    },
+    {
+      "id": "module-feature-1",
+      "label": "Module / Feature 1",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 1]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 1"
+      ],
+      "placeholder": "Enter Module / Feature 1",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 22
+        }
+      ]
+    },
+    {
+      "id": "module-feature-2",
+      "label": "Module / Feature 2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 2]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 2"
+      ],
+      "placeholder": "Enter Module / Feature 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 23
+        }
+      ]
+    },
+    {
+      "id": "module-feature-3",
+      "label": "Module / Feature 3",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 3]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 3"
+      ],
+      "placeholder": "Enter Module / Feature 3",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 24
+        }
+      ]
+    },
+    {
+      "id": "module-feature-4",
+      "label": "Module / Feature 4",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 4]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 4"
+      ],
+      "placeholder": "Enter Module / Feature 4",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 25
+        }
+      ]
+    },
+    {
+      "id": "module-feature-5",
+      "label": "Module / Feature 5",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 5]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 5"
+      ],
+      "placeholder": "Enter Module / Feature 5",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 26
+        }
+      ]
+    },
+    {
+      "id": "module-feature-6",
+      "label": "Module / Feature 6",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 6]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 6"
+      ],
+      "placeholder": "Enter Module / Feature 6",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 27
+        }
+      ]
+    },
+    {
+      "id": "module-feature-7",
+      "label": "Module / Feature 7",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 7]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 7"
+      ],
+      "placeholder": "Enter Module / Feature 7",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 28
+        }
+      ]
+    },
+    {
+      "id": "module-feature-8",
+      "label": "Module / Feature 8",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module / Feature 8]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Cover Letter",
+      "options": [
+        "Module",
+        "Feature 8"
+      ],
+      "placeholder": "Enter Module / Feature 8",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 29
+        }
+      ]
+    },
+    {
+      "id": "module-1",
+      "label": "Module 1",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 1]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 1",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 57
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 151
+        }
+      ]
+    },
+    {
+      "id": "description-of-module-and-key-functionalities",
+      "label": "Description of module and key functionalities",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Description of module and key functionalities]",
+      "required": true,
+      "type": "textarea",
+      "section": "Scope of Work",
+      "placeholder": "Enter Description of module and key functionalities",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 58
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 60
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 62
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 64
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 66
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 68
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 70
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 72
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "label": "Module 2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 2]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 59
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 152
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "label": "Module 3",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 3]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 3",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 61
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 153
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "label": "Module 4",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 4]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 4",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 63
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 154
+        }
+      ]
+    },
+    {
+      "id": "module-5",
+      "label": "Module 5",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 5]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 5",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 65
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 155
+        }
+      ]
+    },
+    {
+      "id": "module-6",
+      "label": "Module 6",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 6]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 6",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 67
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 156
+        }
+      ]
+    },
+    {
+      "id": "module-7",
+      "label": "Module 7",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 7]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 7",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 69
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 157
+        }
+      ]
+    },
+    {
+      "id": "module-8",
+      "label": "Module 8",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Module 8]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Module 8",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 71
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 158
+        }
+      ]
+    },
+    {
+      "id": "management-module-1",
+      "label": "Management Module 1",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Management Module 1]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Management Module 1",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 82
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 165
+        }
+      ]
+    },
+    {
+      "id": "description",
+      "label": "Description",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Description]",
+      "required": true,
+      "type": "textarea",
+      "section": "Scope of Work",
+      "placeholder": "Enter Description",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 83
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 85
+        }
+      ]
+    },
+    {
+      "id": "management-module-2",
+      "label": "Management Module 2",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Management Module 2]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Management Module 2",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 84
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 166
+        }
+      ]
+    },
+    {
+      "id": "description-of-reports-and-downloadable-information-if-applicable",
+      "label": "Description of reports and downloadable information, if applicable",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Description of reports and downloadable information, if applicable]",
+      "required": false,
+      "type": "textarea",
+      "section": "Scope of Work",
+      "placeholder": "Enter Description of reports and downloadable information, if applicable",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 87
+        }
+      ]
+    },
+    {
+      "id": "application-configuration-and-system-settings",
+      "label": "Application configuration and system settings",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Application configuration and system settings]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Application configuration and system settings",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 89
+        }
+      ]
+    },
+    {
+      "id": "additional-module",
+      "label": "Additional Module",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Additional Module]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Additional Module",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 159
+        }
+      ]
+    },
+    {
+      "id": "additional-administrative-module",
+      "label": "Additional Administrative Module",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Additional Administrative Module]",
+      "required": true,
+      "type": "text",
+      "section": "Scope of Work",
+      "placeholder": "Enter Additional Administrative Module",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 169
+        }
+      ]
+    },
+    {
+      "id": "payment-gateway-erp-crm-other-integration",
+      "label": "Payment Gateway / ERP / CRM / Other Integration",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Payment Gateway / ERP / CRM / Other Integration]",
+      "required": true,
+      "type": "dropdown",
+      "section": "Scope of Work",
+      "options": [
+        "Payment Gateway",
+        "ERP",
+        "CRM",
+        "Other Integration"
+      ],
+      "placeholder": "Enter Payment Gateway / ERP / CRM / Other Integration",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 185
+        }
+      ]
+    },
+    {
+      "id": "amount",
+      "label": "Amount",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Amount]",
+      "required": true,
+      "type": "currency",
+      "section": "Scope of Work",
+      "placeholder": "Enter Amount",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 244
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 251
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 256
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 260
+        }
+      ]
+    },
+    {
+      "id": "57-weeks",
+      "label": "5–7 weeks",
+      "source": "PLACEHOLDER",
+      "originalValue": "[5–7 weeks]",
+      "required": true,
+      "type": "text",
+      "section": "Terms & Conditions",
+      "placeholder": "Enter 5–7 weeks",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 309
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-21T09:24:18.847Z",
+  "updatedAt": "2026-09-21T09:24:18.847Z"
+}

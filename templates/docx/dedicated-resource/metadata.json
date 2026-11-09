@@ -1,0 +1,630 @@
+{
+  "id": "dedicated-resource",
+  "name": "Dedicated Resource",
+  "slug": "dedicated-resource",
+  "format": "docx",
+  "file": "template.docx",
+  "active": true,
+  "fieldsDetected": 7,
+  "sectionsDetected": 2,
+  "sections": [
+    {
+      "id": "cover-letter",
+      "title": "Cover Letter",
+      "order": 1,
+      "fieldCount": 5
+    },
+    {
+      "id": "commercials",
+      "title": "Commercials",
+      "order": 2,
+      "fieldCount": 2
+    }
+  ],
+  "fields": [
+    {
+      "id": "quotation-no",
+      "label": "Quotation NO",
+      "source": "SYSTEM",
+      "originalValue": "[Quotation NO]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Quotation NO",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "date",
+      "label": "Date",
+      "source": "SYSTEM",
+      "originalValue": "[Date]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Date",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "customer-details",
+      "label": "Customer details",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer details]",
+      "required": false,
+      "type": "textarea",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer details",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "customer-name",
+      "label": "Customer Name",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Customer Name]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter Customer Name",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 6
+        }
+      ]
+    },
+    {
+      "id": "xxx-company",
+      "label": "XXX Company",
+      "source": "PLACEHOLDER",
+      "originalValue": "[XXX Company]",
+      "required": false,
+      "type": "text",
+      "section": "Cover Letter",
+      "placeholder": "Enter XXX Company",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 8
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 9
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 10
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 11
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 11
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 12
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 13
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 15
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 50
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 51
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 52
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 53
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 53
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 55
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 56
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 57
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 59
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 59
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 64
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 64
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 71
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 72
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 73
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 75
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 77
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 78
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 78
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 78
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 81
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 82
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 103
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 103
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 103
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 106
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 108
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 108
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 115
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 129
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 129
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 131
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 178
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 185
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 186
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 190
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 192
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 194
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 210
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 212
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 219
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 228
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 229
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 243
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 244
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 263
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 263
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 264
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 266
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 267
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 268
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 285
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 289
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 298
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 320
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 333
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 335
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 338
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 339
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 343
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 353
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 353
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 355
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 364
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 366
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 373
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 375
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 376
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 380
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 382
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 385
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 388
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 388
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 388
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 389
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 390
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 398
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 399
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 401
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 402
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 403
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 404
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 404
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 405
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 407
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 410
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 412
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 415
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 416
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 419
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 421
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 434
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 447
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 447
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 482
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 486
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 486
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 487
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 490
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 491
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 492
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 497
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 498
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 502
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 503
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 512
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 515
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 515
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 516
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 517
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 518
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 518
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 521
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 522
+        },
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 523
+        }
+      ]
+    },
+    {
+      "id": "senior-graphic-designer",
+      "label": "Senior Graphic Designer",
+      "source": "PLACEHOLDER",
+      "originalValue": "[Senior Graphic Designer]",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter Senior Graphic Designer",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 423
+        }
+      ]
+    },
+    {
+      "id": "60000",
+      "label": "60,000",
+      "source": "PLACEHOLDER",
+      "originalValue": "[60,000]",
+      "required": false,
+      "type": "text",
+      "section": "Commercials",
+      "placeholder": "Enter 60,000",
+      "locations": [
+        {
+          "documentPart": "word/document.xml",
+          "paragraphIndex": 427
+        }
+      ]
+    }
+  ],
+  "analysisStatus": "completed",
+  "warnings": [],
+  "createdAt": "2026-09-22T11:40:35.900Z",
+  "updatedAt": "2026-09-22T11:40:35.903Z"
+}
