@@ -1,0 +1,183 @@
+name: Security Vulnerability Scan & Alert
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  security-scan:
+    name: Security Vulnerability Scans
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Prepare Reports Directory
+        run: mkdir -p reports
+
+      # 1. Secret Scanning with Gitleaks
+      - name: Run Gitleaks Secrets Scan
+        id: gitleaks_scan
+        continue-on-error: true
+        run: |
+          echo "Installing Gitleaks..."
+          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/gitleaks_8.18.4_linux_x64.tar.gz | tar -xz -C /usr/local/bin gitleaks
+          gitleaks detect --source . --redact --report-format json --report-path reports/gitleaks.json --exit-code 1 || echo "GITLEAKS_FAILED=true" >> $GITHUB_ENV
+
+      # 2. SAST Scan with Semgrep
+      - name: Run Semgrep SAST Scan
+        id: semgrep_scan
+        continue-on-error: true
+        run: |
+          python3 -m pip install semgrep
+          semgrep scan --config auto --severity ERROR --exclude node_modules --exclude .next --json -o reports/semgrep.json . || echo "SEMGREP_FAILED=true" >> $GITHUB_ENV
+
+      # 3. Dependency Vulnerability Scan with npm audit
+      - name: Run Dependency Audit
+        id: audit_scan
+        continue-on-error: true
+        run: |
+          npm ci --ignore-scripts
+          npm audit --audit-level=high --json > reports/npm-audit.json || echo "NPM_AUDIT_FAILED=true" >> $GITHUB_ENV
+
+      # 4. Filesystem, Vulnerability & Misconfig Scan with Trivy
+      - name: Run Trivy Security Scan
+        id: trivy_scan
+        continue-on-error: true
+        run: |
+          echo "Installing Trivy..."
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+          trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --skip-dirs node_modules --skip-dirs .next --format json -o reports/trivy.json --exit-code 1 . || echo "TRIVY_FAILED=true" >> $GITHUB_ENV
+
+      # 5. Summarize Scan Results
+      - name: Generate Vulnerability Summary
+        id: summarize
+        run: |
+          python3 - << 'EOF'
+          import json, os, sys
+
+          summary_lines = []
+          has_failures = False
+
+          summary_lines.append("# 🛡️ Security Vulnerability Scan Report")
+          summary_lines.append(f"**Repository:** `{os.environ.get('GITHUB_REPOSITORY')}` | **Commit:** `{os.environ.get('GITHUB_SHA', '')[:7]}` | **Triggered by:** `{os.environ.get('GITHUB_ACTOR')}`\n")
+          summary_lines.append("| Scanner | Target / Scope | Status | Report File |")
+          summary_lines.append("| :--- | :--- | :---: | :--- |")
+
+          # Check Gitleaks
+          gitleaks_failed = os.environ.get('GITLEAKS_FAILED') == 'true'
+          g_status = "❌ Issues Found" if gitleaks_failed else "✅ Passed"
+          if gitleaks_failed: has_failures = True
+          summary_lines.append(f"| **Gitleaks** | Hardcoded Secrets & API Keys | {g_status} | `reports/gitleaks.json` |")
+
+          # Check Semgrep
+          semgrep_failed = os.environ.get('SEMGREP_FAILED') == 'true'
+          s_status = "❌ Issues Found" if semgrep_failed else "✅ Passed"
+          if semgrep_failed: has_failures = True
+          summary_lines.append(f"| **Semgrep** | SAST Code Security Vulnerabilities | {s_status} | `reports/semgrep.json` |")
+
+          # Check npm audit
+          npm_failed = os.environ.get('NPM_AUDIT_FAILED') == 'true'
+          n_status = "❌ High/Critical CVEs" if npm_failed else "✅ Passed"
+          if npm_failed: has_failures = True
+          summary_lines.append(f"| **npm audit** | Third-party Dependencies | {n_status} | `reports/npm-audit.json` |")
+
+          # Check Trivy
+          trivy_failed = os.environ.get('TRIVY_FAILED') == 'true'
+          t_status = "❌ Vulnerabilities / Misconfigs" if trivy_failed else "✅ Passed"
+          if trivy_failed: has_failures = True
+          summary_lines.append(f"| **Trivy** | Filesystem, Secrets & Misconfigurations | {t_status} | `reports/trivy.json` |")
+
+          summary_text = "\n".join(summary_lines)
+          print(summary_text)
+
+          step_summary_path = os.environ.get('GITHUB_STEP_SUMMARY')
+          if step_summary_path:
+              with open(step_summary_path, 'a', encoding='utf-8') as f:
+                  f.write(summary_text + "\n")
+
+          with open('reports/summary.md', 'w', encoding='utf-8') as f:
+              f.write(summary_text + "\n")
+
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
+              f.write(f"vulnerabilities_detected={'true' if has_failures else 'false'}\n")
+          EOF
+
+      # 6. Archive reports as GitHub Artifacts
+      - name: Upload Scan Artifacts
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: security-scan-reports
+          path: reports/
+          retention-days: 30
+
+      # 7. Send Email Alert to Developer and Infra Team
+      - name: Send Email Report to Developer and Infra Team
+        if: steps.summarize.outputs.vulnerabilities_detected == 'true' && env.SMTP_SERVER != ''
+        uses: dawidd6/action-send-mail@v3
+        env:
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT || 587 }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "⚠️ [Security Alert] Vulnerabilities Detected in ${{ github.repository }} (${{ github.ref_name }})"
+          to: ${{ secrets.SECURITY_DEVELOPER_EMAILS || secrets.DEVELOPER_EMAILS }},${{ secrets.SECURITY_INFRA_EMAILS || secrets.INFRA_EMAILS }}
+          from: ${{ secrets.SMTP_FROM || 'security-alerts@github-actions.local' }}
+          body: |
+            Security Vulnerability Alert!
+
+            Repository: ${{ github.repository }}
+            Branch: ${{ github.ref_name }}
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+            Workflow Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            One or more security scanners (Gitleaks, Semgrep, npm audit, Trivy) detected vulnerabilities.
+            Please review the attached reports and the GitHub Action summary for remediation steps.
+          attachments: reports/gitleaks.json,reports/semgrep.json,reports/npm-audit.json,reports/trivy.json
+          ignore_cert: false
+
+      # 8. Create GitHub Issue if SMTP is not configured or as team notification
+      - name: Create GitHub Issue Alert
+        if: steps.summarize.outputs.vulnerabilities_detected == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const summary = fs.readFileSync('reports/summary.md', 'utf8');
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const body = `${summary}\n\n**Run Details:** [View Workflow Run](${runUrl})\n**Action Required:** Developer and Infra teams must address the detected vulnerabilities before production deployment.`;
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🚨 [Security Alert] Vulnerabilities found in commit ${context.sha.substring(0, 7)}`,
+              body: body,
+              labels: ['security', 'vulnerability']
+            });
+
+      # 9. Fail the job if vulnerabilities were detected
+      - name: Fail on Vulnerability Detection
+        if: steps.summarize.outputs.vulnerabilities_detected == 'true'
+        run: |
+          echo "::error::Security vulnerabilities or secret leaks were detected. Check the scan reports and action summary."
+          exit 1

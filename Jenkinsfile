@@ -57,14 +57,35 @@ pipeline {
     failure {
       script {
         def author = sh(script: "git log -1 --pretty=format:'%ae'", returnStdout: true).trim()
+        def developerEmails = env.SECURITY_DEVELOPER_EMAILS?.trim()
+        def infraEmails = env.SECURITY_INFRA_EMAILS?.trim()
+        def missingRecipients = []
+
+        if (!developerEmails) {
+          missingRecipients << 'SECURITY_DEVELOPER_EMAILS'
+        }
+        if (!infraEmails) {
+          missingRecipients << 'SECURITY_INFRA_EMAILS'
+        }
+
+        def recipients = [author, developerEmails, infraEmails]
+          .findAll { it }
+          .unique()
+          .join(',')
+
         emailext(
-          to: "${author}, pwn1024@gmail.com",
+          to: recipients,
           subject: "Vulnerabilities found: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
           body: """Scan failed for commit ${env.GIT_COMMIT}.
 Author: ${author}
+Missing team recipient configuration: ${missingRecipients ? missingRecipients.join(', ') : 'none'}.
 Report: ${env.BUILD_URL}artifact/reports/""",
           attachmentsPattern: 'reports/*.json'
         )
+
+        if (missingRecipients) {
+          echo "Warning: Missing Jenkins environment variables for team alerts: ${missingRecipients.join(', ')}"
+        }
       }
     }
   }
