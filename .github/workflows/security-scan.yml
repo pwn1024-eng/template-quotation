@@ -181,3 +181,4 @@ jobs:
         run: |
           echo "::error::Security vulnerabilities or secret leaks were detected. Check the scan reports and action summary."
           exit 1
+
