@@ -1,15 +1,22 @@
 services:
-  jenkins:
+  quotation-app:
     build:
       context: .
-      dockerfile: Dockerfile.jenkins
-    container_name: jenkins-server
+      dockerfile: Dockerfile
     ports:
-      - "8080:8080"
-      - "50000:50000"
+      - "102:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DATABASE_URL: file:/app/data/quotation.db
+      TEMPLATE_DIR: /app/templates
+      STORAGE_DIR: /app/storage
     volumes:
-      - jenkins_data:/var/jenkins_home
+      - quotation_data:/app/data
+      - quotation_storage:/app/storage
     restart: unless-stopped
+    init: true
 
 volumes:
-  jenkins_data:
+  quotation_data:
+  quotation_storage:

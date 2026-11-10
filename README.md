@@ -96,6 +96,22 @@ A full-stack enterprise web application built with **Next.js**, **React**, **Typ
 
 ## 🚀 Quick Start & Installation
 
+### Run with Docker
+
+Install Docker Engine or Docker Desktop, then run from the project directory:
+
+```bash
+docker compose up --build -d
+```
+
+Open [http://localhost:102](http://localhost:102). SQLite data and generated documents are stored in Docker volumes and persist when the container is recreated. To stop the app, run:
+
+```bash
+docker compose down
+```
+
+The image includes LibreOffice for DOCX/PPTX-to-PDF conversion. On Linux, publishing port 102 may require elevated privileges because it is below port 1024.
+
 ### 1. Prerequisites
 - Node.js 18+ (tested on Node v22)
 - npm 9+

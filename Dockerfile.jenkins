@@ -2,7 +2,7 @@ FROM jenkins/jenkins:lts-jdk17
 USER root
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      curl ca-certificates git python3 python3-venv \
+      curl ca-certificates git gnupg python3 python3-venv \
  && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
  && apt-get install -y nodejs \
  && rm -rf /var/lib/apt/lists/*
@@ -12,8 +12,13 @@ RUN curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.18.4/git
     | tar -xz -C /usr/local/bin gitleaks
 
 # Trivy (dependencies, config, secrets)
-RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh \
-    | sh -s -- -b /usr/local/bin v0.58.0
+RUN curl -fsSL https://get.trivy.dev/deb/public.key \
+      | gpg --dearmor -o /usr/share/keyrings/trivy.gpg \
+ && echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://get.trivy.dev/deb generic main" \
+      > /etc/apt/sources.list.d/trivy.list \
+ && apt-get update \
+ && apt-get install -y --no-install-recommends trivy \
+ && rm -rf /var/lib/apt/lists/*
 
 # Semgrep (SAST), in its own virtualenv
 RUN python3 -m venv /opt/semgrep \
@@ -21,4 +26,3 @@ RUN python3 -m venv /opt/semgrep \
  && ln -sf /opt/semgrep/bin/semgrep /usr/local/bin/semgrep
 
 USER jenkins
-
